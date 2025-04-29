@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: "radio"
+
+  datasource:
+    url: "jdbc:h2:mem:testdb"
+    username: "sa"
+    password: "123"
+    driver-class-name: org.h2.Driver
+    console:
+      enabled: true
+      path: /h2-console
+      properties:
+        webAllowOthers: false
+        tcpAllowOthers: false
+        webPort: 9092
+  jpa:
+    show-sql: true
